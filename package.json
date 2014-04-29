@@ -1,0 +1,26 @@
+{
+  "name": "js-Polyfill",
+  "version": "0.0.1",
+  "description": "Provides JavaScript polyfill prototype functions so that you can use the new functions in older browsers (eg. IE7).",
+  "main": "src/js-polyfill.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emn178/js-polyfill.git"
+  },
+  "keywords": [
+    "javascript",
+    "prototype",
+    "polyfill"
+  ],
+  "license": "MIT",
+  "author": "emn178 <emn178@gmail.com>",
+  "homepage": "https://github.com/emn178/js-polyfill",
+  "bugs": {
+    "url": "https://github.com/emn178/js-polyfill/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

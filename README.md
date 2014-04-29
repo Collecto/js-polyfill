@@ -1,5 +1,5 @@
 # js-Polyfill
-Provides JavaScript polyfill functions.
+Provides JavaScript polyfill prototype functions so that you can use the new functions in older browsers (eg. IE7). 
 
 ## Complete Functions
 ### Array
@@ -9,6 +9,10 @@ Provides JavaScript polyfill functions.
 * Array.prototype.forEach()
 * Array.prototype.indexOf()
 * Array.prototype.lastIndexOf()
+* Array.prototype.map()
+* Array.prototype.reduce()
+* Array.prototype.reduceRight()
+* Array.prototype.some()
 
 ## License
 The project is released under the [MIT license](http://www.opensource.org/licenses/MIT).
