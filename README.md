@@ -14,6 +14,12 @@ Provides JavaScript polyfill prototype functions so that you can use the new fun
 * Array.prototype.reduceRight()
 * Array.prototype.some()
 
+### Function
+* Function.prototype.bind()
+
+### String
+* String.prototype.trim()
+
 ## License
 The project is released under the [MIT license](http://www.opensource.org/licenses/MIT).
 

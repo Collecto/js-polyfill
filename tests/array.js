@@ -1,6 +1,4 @@
 ;(function(undefined) {
-  // module( 'Array' );
-
   test('Array.isArray', function() {
     ok( Array.isArray([]), 'Array.isArray([])' );
     ok( !Array.isArray({}), '!Array.isArray({})' );
@@ -106,7 +104,7 @@
     equal([12, 5, 8, 5, 44].indexOf(5, Infinity), -1, "[12, 5, 8, 5, 44].indexOf(5, Infinity), -1");
     equal([12, 5, 8, 5, 44].indexOf(5, -Infinity), 1, "[12, 5, 8, 5, 44].indexOf(5, -Infinity), 1");
     equal([12, 5, 8, 5, 44].indexOf(5, NaN), 1, "[12, 5, 8, 5, 44].indexOf(5, NaN), 1");
-    equal([12, 5, 8, 5, 44].indexOf(5, 'A'), 1, "[12, 5, 8, 5, 44].indexOf(5, 'A'), 1");
+    equal([12, 5, 8, 5, 44].indexOf(5, '3A'), 1, "[12, 5, 8, 5, 44].indexOf(5, 'A'), 1");
     equal([12, 5, 8, 5, 44].indexOf(5, false), 1, "[12, 5, 8, 5, 44].indexOf(5, false), 1");
     equal([12, 5, 8, 5, 44].indexOf(5, {}), 1, "[12, 5, 8, 5, 44].indexOf(5, {}), 1");
     equal([12, 5, 8, 5, 44].indexOf(5, []), 1, "[12, 5, 8, 5, 44].indexOf(5, []), 1");
@@ -137,12 +135,11 @@
     equal([12, 5, 8, 5, 44].lastIndexOf(5, Infinity), 3, "[12, 5, 8, 5, 44].lastIndexOf(5, Infinity), 3");
     equal([12, 5, 8, 5, 44].lastIndexOf(5, -Infinity), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, -Infinity), -1");
     equal([12, 5, 8, 5, 44].lastIndexOf(5, NaN), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, NaN), -1");
-    equal([12, 5, 8, 5, 44].lastIndexOf(5, 'A'), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, 'A'), -1");
+    equal([12, 5, 8, 5, 44].lastIndexOf(5, '3A'), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, 'A'), -1");
     equal([12, 5, 8, 5, 44].lastIndexOf(5, false), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, false), 1");
     equal([12, 5, 8, 5, 44].lastIndexOf(5, {}), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, {}), 1");
     equal([12, 5, 8, 5, 44].lastIndexOf(5, []), -1, "[12, 5, 8, 5, 44].lastIndexOf(5, []), 1");
     
-
     equal(Array.prototype.lastIndexOf.call({'0': 1, '1': 9, 'length': 2}, 9), 1, "Array.prototype.lastIndexOf.call({'0': 1, '1': 9, 'length': 2}, 9), 1");
     equal(Array.prototype.lastIndexOf.call({'length': 2}, 9), -1, "Array.prototype.lastIndexOf.call({'length': 2}, 9), -1");
 
@@ -220,7 +217,6 @@
       Array.prototype.reduceRight.call(Infinity, join);
     }, "throws Array.prototype.reduceRight.call(Infinity, join)");
   });
-
 
   test('Array.prototype.some', function() {
     ok( ![2, 5, 8, 1, 4].some(greaterThan8), '![2, 5, 8, 1, 4].some(greaterThan8)' );
